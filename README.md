@@ -12,7 +12,7 @@ A GUI-based Tic-Tac-Toe game written in C using the GTK library. This project fe
 
 ## Screenshots
 
-_(Include screenshots here if available.)_
+![alt text](image.png)
 
 ## Installation
 
