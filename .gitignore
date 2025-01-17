@@ -1,25 +1,28 @@
-# .gitignore
-
-# Compiled object files
-*.o
-
-# Compiled dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Executable files
+# Ignore executable files
 *.exe
 
-# GTK build files
-*.log
-*.cache
+# Ignore build artifacts
+*.o
+*.out
+bin/
+obj/
 
-# Visual Studio Code
+# Ignore IDE specific files
 .vscode/
+*.code-workspace
+.idea/
 
-# macOS
+# Ignore system files
 .DS_Store
-
-# Windows
 Thumbs.db
+
+# Ignore local environment files
+.env
+*.env.local
+
+# Ignore log files
+*.log
+
+# Ignore dependency directories
+node_modules/
+packages/
