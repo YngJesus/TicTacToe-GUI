@@ -1,28 +1,19 @@
 # .gitignore
 
-# Node.js
-node_modules/
-npm-debug.log
+# Compiled object files
+*.o
 
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-.Python
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+# Compiled dynamic libraries
+*.so
+*.dylib
+*.dll
 
-# Java
-*.class
-*.jar
-*.war
-*.ear
-*.class
+# Executable files
+*.exe
+
+# GTK build files
 *.log
+*.cache
 
 # Visual Studio Code
 .vscode/
