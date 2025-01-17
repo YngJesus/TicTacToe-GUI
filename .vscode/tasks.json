@@ -1,0 +1,39 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "C:/msys64/ucrt64/bin/gcc.exe",
+      "args": [
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}.exe",
+        "-mwindows",
+        "-IC:/msys64/ucrt64/include/gtk-4.0",
+        "-IC:/msys64/ucrt64/include/pango-1.0",
+        "-IC:/msys64/ucrt64/include/glib-2.0",
+        "-IC:/msys64/ucrt64/lib/glib-2.0/include",
+        "-IC:/msys64/ucrt64/include/harfbuzz",
+        "-IC:/msys64/ucrt64/include/cairo",
+        "-IC:/msys64/ucrt64/include/gdk-pixbuf-2.0",
+        "-LC:/msys64/ucrt64/lib",
+        "-lgtk-4",
+        "-lpangocairo-1.0",
+        "-lpango-1.0",
+        "-lharfbuzz",
+        "-lglib-2.0",
+        "-lcairo",
+        "-lgobject-2.0"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": "$gcc"
+    }
+  ]
+}
